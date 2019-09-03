@@ -1,7 +1,6 @@
 package com.graphqlspringdemo;
 
 import com.graphqlspringdemo.repository.AuthorRepository;
-import com.graphqlspringdemo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,8 +20,8 @@ public class SimpleSpringGraphqlMongoDemoApplication {
 
 	@Bean
 	@Autowired
-	public ServletRegistrationBean graphQLServlet(PostRepository postRepository, AuthorRepository authRepository, UserRepository userRepository ) {
-		return new ServletRegistrationBean(new GraphQLEntryPoint(postRepository, authRepository,userRepository),"/graphql");
+	public ServletRegistrationBean graphQLServlet(PostRepository postRepository, AuthorRepository authRepository  ) {
+		return new ServletRegistrationBean(new GraphQLEntryPoint(postRepository, authRepository),"/graphql");
 	}
 
 }

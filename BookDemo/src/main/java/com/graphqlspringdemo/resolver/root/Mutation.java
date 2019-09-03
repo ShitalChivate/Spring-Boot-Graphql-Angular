@@ -1,13 +1,11 @@
 package com.graphqlspringdemo.resolver.root;
 
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
-import com.graphqlspringdemo.model.JwtUser;
 import com.graphqlspringdemo.pojo.Author;
 import com.graphqlspringdemo.pojo.Post;
 //import com.graphqlspringdemo.pojo.User;
 import com.graphqlspringdemo.repository.AuthorRepository;
 import com.graphqlspringdemo.repository.PostRepository;
-import com.graphqlspringdemo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -17,11 +15,10 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 public class Mutation implements GraphQLRootResolver {
 
 
-	public Mutation(AuthorRepository authRepo, PostRepository postRepo,UserRepository userRepository) {
+	public Mutation(AuthorRepository authRepo, PostRepository postRepo) {
 		super();
 		this.authRepo = authRepo;
 		this.postRepo = postRepo;
-		this.userRepository = userRepository;
 	}
 	@Autowired
 	private AuthorRepository authRepo;
@@ -63,17 +60,6 @@ public class Mutation implements GraphQLRootResolver {
 		Author auth = authRepo.findOne(authorName);
 		authRepo.delete(authorName);
 		return auth;
-	}
-
-	@Autowired
-	private UserRepository userRepository;
-
-	public JwtUser createUser(String name, String password,String email) {
-		JwtUser newUser=new JwtUser();
-		newUser.setUserName(name);
-		newUser.setPassword(password);
-		newUser.setEmail(email);
-		return userRepository.save(newUser);
 	}
 }
 
