@@ -17,6 +17,7 @@ public class AuthorResolver implements GraphQLResolver<Author> {
 	private  PostRepository postRepository;
 
 	public List<Post> posts(Author auth) {
+
 		return postRepository.findByAuthorId(auth.getId());
 	}
 

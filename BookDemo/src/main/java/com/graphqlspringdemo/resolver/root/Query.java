@@ -1,11 +1,9 @@
 package com.graphqlspringdemo.resolver.root;
 
-
 import java.util.List;
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
 import com.graphqlspringdemo.pojo.Author;
 import com.graphqlspringdemo.pojo.Post;
-//import com.graphqlspringdemo.pojo.User;
 import com.graphqlspringdemo.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +25,6 @@ public class Query implements GraphQLRootResolver {
 	@Autowired
 	private  AuthorRepository authRepo;
 
-
 	@GetMapping("/getProlist")
 	public List<Post> allOrders() {
 		return postRepository.findAll();
@@ -42,5 +39,4 @@ public class Query implements GraphQLRootResolver {
 		Author a = authRepo.findById(Id);
 		return a;
 	}
-
 }

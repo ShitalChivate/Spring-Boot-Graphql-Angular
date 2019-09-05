@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @CrossOrigin(origins = "*",maxAge = 3600)
 public class GraphQLEntryPoint extends SimpleGraphQLServlet {
 
-	public GraphQLEntryPoint(PostRepository postRepository, AuthorRepository authRepository ) {
+	public GraphQLEntryPoint(PostRepository postRepository, AuthorRepository authRepository) {
 		super(buildSchema(postRepository,authRepository));
 	}
 

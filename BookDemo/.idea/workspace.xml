@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b95ae71-d05f-40ff-a06b-d080bc98d26a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple-springboot-graphql-mongo-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/simple-springboot-graphql-mongo-demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/GraphQLEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/GraphQLEntryPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/SimpleSpringGraphqlMongoDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/SimpleSpringGraphqlMongoDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/config/JwtSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/controller/TokenController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/model/JwtAuthenticationToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/model/JwtUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/model/JwtUserDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/pojo/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/pojo/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/resolver/ql/AuthorResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/resolver/ql/AuthorResolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/resolver/root/Mutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/resolver/root/Mutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/resolver/root/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/resolver/root/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/security/JwtAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/security/JwtAuthenticationProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/security/JwtAuthenticationTokenFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/security/JwtGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/security/JwtSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graphqlspringdemo/security/JwtValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.graphqls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +58,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1QHRG3zoS1DNnujx9t67lUV7f77" />
+  <component name="ProjectId" id="1Oig7Zg3X8JXYeZP5lluUZvvXJ1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -83,6 +70,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">

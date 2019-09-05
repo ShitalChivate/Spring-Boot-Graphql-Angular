@@ -20,8 +20,6 @@ public class Author {
 		this.price=price;
 	}
 
-
-
 	public String getPrice() {
 		return price;
 	}
@@ -45,19 +43,4 @@ public class Author {
 	public void setAuthorName(String name) {
 		this.authorName = authorName;
 	}
-
-//	@Override
-//	public boolean equals(Object o) {
-//		if (this == o) return true;
-//		if (!(o instanceof Author)) return false;
-//		Author author = (Author) o;
-//		return Objects.equals(getId(), author.getId()) &&
-//				Objects.equals(getAuthorName(), author.getAuthorName()) &&
-//				Objects.equals(getPrice(), author.getPrice());
-//	}
-//
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(getId(), getAuthorName(), getPrice());
-//	}
 }

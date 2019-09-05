@@ -3,7 +3,6 @@ package com.graphqlspringdemo.resolver.root;
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
 import com.graphqlspringdemo.pojo.Author;
 import com.graphqlspringdemo.pojo.Post;
-//import com.graphqlspringdemo.pojo.User;
 import com.graphqlspringdemo.repository.AuthorRepository;
 import com.graphqlspringdemo.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;

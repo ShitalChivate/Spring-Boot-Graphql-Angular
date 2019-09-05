@@ -20,7 +20,7 @@ public class SimpleSpringGraphqlMongoDemoApplication {
 
 	@Bean
 	@Autowired
-	public ServletRegistrationBean graphQLServlet(PostRepository postRepository, AuthorRepository authRepository  ) {
+	public ServletRegistrationBean graphQLServlet(PostRepository postRepository, AuthorRepository authRepository ) {
 		return new ServletRegistrationBean(new GraphQLEntryPoint(postRepository, authRepository),"/graphql");
 	}
 
